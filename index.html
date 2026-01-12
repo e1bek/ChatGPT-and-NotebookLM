@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+<div class="loader-wripper">
+  <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+  <div class="wrapper">
+    <button class="btn show-btn" id="show-btn">
+      Show Modal
+    </button>
+6 
+    <div class="modal hidden" id="modal">
+      <div class="modal-header">
+        <h3>nature</h3>
+        <button class="btn close-btn" id="close-btn">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h2 class="modal-title">Modal Title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+          voluptate quis quibusdam officiis, ea modi cumque ipsa reiciendis.
+          Dolore voluptatum officia totam veritatis iste. Ut tempore veniam
+          aperiam itaque culpa, eius dolores ratione impedit, eum ipsam nemo
+          quae quis in corporis deserunt totam. Voluptas, magni.
+        </p>
+        
+        <p id="count"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="overlay"></div>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
